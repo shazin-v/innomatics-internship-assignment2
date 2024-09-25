@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Company Directory Portal</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Company Directory Portal</h1>
+      <div class="register-container">
+        <form>
+          <h2 class="title">Employee Registration Form</h2>
+          <label for="">Full Name:</label> <br />
+          <input type="text" placeholder="Enter Full Nme" required /> <br />
+          <label for="">Email:</label> <br />
+          <input type="email" placeholder="Enter Email" required /> <br />
+          <label for="">Department:</label> <br />
+          <select>
+            <option value="IT">IT</option>
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="Admin">Admin</option>
+          </select>
+          <br />
+          <label for="">Employee ID:</label> <br />
+          <input type="number" placeholder="Enter Employee ID" required /><br />
+          <label for="">Profile Picture URL:</label> <br />
+          <input type="url" placeholder="Paste your URL" required /><br />
+          <button type="submit" class="button">Register Employee</button>
+        </form>
+      </div>
+
+      <div class="employee-container">
+        <h2 class="title">Employee List</h2>
+        <ol>
+          <li>
+            <a href="">John Doe - John@example.com</a>
+          </li>
+          <hr />
+          <li>
+            <a href="">Jane Smith - jane@example.com</a>
+          </li>
+          <hr />
+        </ol>
+      </div>
+
+      <div class="employee-container">
+        <h2 class="title">Employee Details</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Employee ID</th>
+              <th>Department</th>
+              <th>Profile Picture</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>12345</td>
+              <td>IT</td>
+              <td>
+                <img
+                  src="https://via.placeholder.com/50"
+                  alt="Profile Picture"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>12346</td>
+              <td>HR</td>
+              <td>
+                <img
+                  src="https://via.placeholder.com/50"
+                  alt="Profile Picture"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="title">Company location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d910.4234959517293!2d78.38999!3d17.49803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e1!3m2!1sen!2sin!4v1727275006051!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </body>
+</html>
